@@ -38,12 +38,25 @@ $ sudo vi ~/.aws/credentials
 Using your GCP Credentials set up the id's at
 
 ````
-$ sudo cat ~/.gcloud/keyfile.json
+$ sudo cat /home/$USER/.gcloud/keyfile.json
+````
+* Running latest nodjs and npm
+
+Make sure to run latest version of nodejs and npm by running the below command:
+
+````
+$ sudo npm cache clean -f
+$ sudo npm install -g n
+$ sudo n stable
+
+$ sudo ln -sf /usr/local/n/versions/node/<VERSION>/bin/node /usr/bin/nodejs
 ````
 
 ### Serverless Framework
 
+#### Google Cloud Functions
 
+Using google cloud functions can be currently implemented using Serverless framework.
 
 ### Apex
 
